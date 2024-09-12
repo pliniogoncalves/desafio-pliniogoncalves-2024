@@ -34,7 +34,7 @@ class RecintosZoo {
       // Verificar cada recinto
       for (const recinto of recintos) {
         // Verificar se o bioma é adequado para o animal
-        if (!animalInfo.biomas.includes(recinto.bioma) && !(animal === 'HIPOPOTAMO' && recinto.bioma === 'savana e rio')) {
+        if (!animalInfo.biomas.includes(recinto.bioma) && !(animal === 'HIPOPOTAMO' && recinto.bioma === 'savana e rio') && !(animal === 'MACACO' && recinto.bioma === 'savana e rio')) {
           continue;
         }
   
